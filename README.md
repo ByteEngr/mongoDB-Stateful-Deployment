@@ -66,7 +66,7 @@ kubectl port-forward svc/mongo-express-service 8081:8081
 
 
 
-## cleanup
+## Cleanup
 ```bash
 kubectl delete -f mongo-express.yaml
 kubectl delete -f mongo-db.yaml
