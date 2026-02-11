@@ -4,7 +4,7 @@ This repository contains Kubernetes manifests to deploy a MongoDB StatefulSet wi
 
 ---
 
-## Features
+## Features:
 
 - MongoDB StatefulSet with persistent storage (1Gi)
 - Headless service for MongoDB for stable pod networking
@@ -13,13 +13,13 @@ This repository contains Kubernetes manifests to deploy a MongoDB StatefulSet wi
 - Kubernetes Secrets for secure credentials
 
 ---
-## Deployment
+## Deployment:
 After deployment, open your browser at, and you should see the Mongo Express deployment
 http://localhost:8081
 
 ![mongo](mong.png)
 
-## Prerequisites
+## Prerequisites:
 
 - Kubernetes cluster (kind)
 - `kubectl` installed and configured
@@ -42,7 +42,7 @@ kubectl apply -f configmap.yaml
 ```
 The ConfigMap seeds the MongoDB database with sample products.
 
-#### 3. StatefulSet MongoDB
+#### 3. StatefulSet MongoDB:
 
 ```
 kubectl apply -f mongo-db.yaml
@@ -50,7 +50,7 @@ kubectl apply -f mongo-db.yaml
 - The StatefulSet creates a persistent volume claim for data storage.
 - MongoDB runs on port 27017 and uses the headless service mongo-headless
 
-### 4. Mongo Express
+### 4. Mongo Express:
 
 ```
 kubectl apply -f mongo-express.yaml
@@ -58,7 +58,7 @@ kubectl apply -f mongo-express.yaml
 - Mongo Express runs on port 8081.
 - Connects to MongoDB using the headless service mongo-headless.
 
-### Access Mongo Express
+### Access Mongo Express:
 local cluster
 ```
 kubectl port-forward svc/mongo-express-service 8081:8081
