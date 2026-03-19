@@ -55,8 +55,8 @@ kubectl apply -f mongo-db.yaml
 ```
 kubectl apply -f mongo-express.yaml
 ```
-- Mongo Express runs on port 8081.
-- Connects to MongoDB using the headless service mongo-headless.
++ Mongo Express runs on port 8081.
++ Connects to MongoDB using the headless service mongo-headless.
 
 ### Access Mongo Express:
 local cluster
