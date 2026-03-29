@@ -25,8 +25,8 @@ http://localhost:8081
 
 ## Prerequisites:
 
-- Kubernetes cluster (kind)
-- `kubectl` installed and configured
+i. Kubernetes cluster (kind)
+ii. `kubectl` installed and configured
 - Optional: `helm` if you want to use charts later
 
 ---
