@@ -6,15 +6,15 @@ This repository contains Kubernetes manifests to deploy a MongoDB StatefulSet wi
 
 ## Features:
 
-1. MongoDB StatefulSet with persistent storage (1Gi)
+- MongoDB StatefulSet with persistent storage (1Gi)
 
-2. Headless service for MongoDB for stable pod networking
+- Headless service for MongoDB for stable pod networking
 
-3. Mongo Express Deployment with ClusterIP service
+- Mongo Express Deployment with ClusterIP service
 
-4. ConfigMap for initializing `product-service-db` with sample `products`
+- ConfigMap for initializing `product-service-db` with sample `products`
 
-5. Kubernetes Secrets for secure credentials
+- Kubernetes Secrets for secure credentials
 
 ---
 ## Deployment:
