@@ -33,13 +33,13 @@ ii. `kubectl` installed and configured
 
 ## Deployment Instructions
 
-### 1. Create Secrets
+### 1. Create Secrets:
 
 ```bash
 kubectl apply -f mongo-secret.yaml
 ```
 This will create the MongoDB root credentials and Mongo Express login credentials.
-### 2. Create ConfigMap for Initial Data
+### 2. Create ConfigMap for Initial Data:
 
 ```
 kubectl apply -f configmap.yaml
