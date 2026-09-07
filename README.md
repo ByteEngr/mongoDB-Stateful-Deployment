@@ -46,7 +46,7 @@ kubectl apply -f configmap.yaml
 ```
 The ConfigMap seeds the MongoDB database with sample products.
 
-#### 3. StatefulSet MongoDB:
+### 3. StatefulSet MongoDB:
 
 ```
 kubectl apply -f mongo-db.yaml
